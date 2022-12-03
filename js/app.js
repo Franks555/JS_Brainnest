@@ -74,7 +74,7 @@ function selectDificulty(){
             break;
         }
         else{
-            alert("the option is invalid, please enter a the dificulty");
+            alert("the option is invalid, the only values accepted are Easy, Normal and Hard. Please enter a the dificulty");
         }
     }
 }
