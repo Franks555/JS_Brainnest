@@ -53,28 +53,28 @@ function showWords(array, wordsNumber, time) {
 
 
 function selectDificulty(){
-    while (dificulty != 1 || dificulty != 2 || dificulty != 3 ){
-        dificulty = parseInt(prompt("Please, select level of dificulty of the MemoTest (input only a number): \n \n 1. Easy \n \n 2. Normal \n \n 3. Hard \n \n"));
-        if (dificulty == 1) {
+    while (dificulty != "Easy" || dificulty != "Normal" || dificulty != "Hard" ){
+        dificulty = prompt("Please, select level of dificulty of the MemoTest: \n \n 1. Easy \n \n 2. Normal \n \n 3. Hard \n \n");
+        if (dificulty == "Easy") {
             time = 2000;
             alert(" \n EASY dificulty selected. \n \n Are you ready??");
             showWords(randomsWordsArray, numberOfwords, time);
             break;
         }
-        if (dificulty == 2) {
+        if (dificulty == "Normal") {
             time = 1400
             alert(" \n NORMAL dificulty selected \n \n Are you ready??");
             showWords(randomsWordsArray, numberOfwords, time);
             break;
         }
-        if (dificulty == 3) {
+        if (dificulty == "Hard") {
             time = 900;
             alert(" \n HARD dificulty selected \n \n Are you ready??");
             showWords(randomsWordsArray, numberOfwords, time);
             break;
         }
         else{
-            alert("the option is invalid, please enter a number between 1 and 3");
+            alert("the option is invalid, please enter a the dificulty");
         }
     }
 }
